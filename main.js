@@ -8,7 +8,7 @@ const error=document.querySelector("#error")
 const PasswordError=document.querySelector("#PassError")
 const confirmPassError=document.querySelector("#confirmPassError")
 const passwordIcon = document.querySelector("#passwordIcon")
-const confirmIcon = document.querySelector("#confirmIcon")
+// const confirmIcon = document.querySelector("#confirmIcon")
 
 
 
@@ -20,14 +20,14 @@ passwordIcon.addEventListener("click" , function(){
         Password.type = "password"
     }
 })
-confirmIcon.addEventListener("click" , function(){
-    if(ConfirmPass.type == "password"){
-        ConfirmPass.type = "text"
-    }
-    else{
-        ConfirmPass.type = "password"
-    }
-})
+// confirmIcon.addEventListener("click" , function(){
+//     if(ConfirmPass.type == "password"){
+//         ConfirmPass.type = "text"
+//     }
+//     else{
+//         ConfirmPass.type = "password"
+//     }
+// })
 
 
 Savebtn.addEventListener("click",function(event){
@@ -42,9 +42,12 @@ function checkEmpty(){
       Email.style.border="2px red solid"
       Password.style.border="2px red solid"
       ConfirmPass.style.border="2px red solid"
-      passwordIcon.style.marginTop="25px"
-      confirmIcon.style.marginBottom="-53px"
+      passwordIcon.style.marginTop="50px"
+    //   confirmIcon.style.marginBottom="-53px"
 
+    }
+    else{
+        error.innerHTML="Login successful"
     }
     if(Password.value.length < 6){
         PasswordError.innerHTML = "Password must be at least 6"
