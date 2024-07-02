@@ -42,8 +42,8 @@ function checkEmpty(){
       Email.style.border="2px red solid"
       Password.style.border="2px red solid"
       ConfirmPass.style.border="2px red solid"
-      passwordIcon.style.marginTop="28px"
-      confirmIcon.style.marginBottom="-45px"
+      passwordIcon.style.marginTop="25px"
+      confirmIcon.style.marginBottom="-53px"
 
     }
     if(Password.value.length < 6){
