@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400">
+    <div class="flex justify-center pt-20">
+        <form class="w-[420px] h-[465px] relative bg-white pt-10 pl-7 rounded-4 m-auto text-1xl">
+            <p id="error"></p>
+            <input id="name"   class="mt-4 border-[2px] border-black w-[350px] h-[40px] " type="text" placeholder="Enter your Name">
+            <br>
+            <input id="email" class="mt-4 border-[2px] border-black w-[350px] h-[40px] " type="text" placeholder="Enter your Email">
+            <br>
+            <input onkeypress="checkPassword()" id="pass"  class="mt-4 border-[2px] border-black w-[350px] h-[40px] " type="password" placeholder="Enter your password">
+            <i id="passwordIcon" class="fa-solid fa-eye absolute right-12 top-[180px]"></i>
+            <P id="PassError"></P>
+            <br>
+            <input id="con" class="mt-4 border-[2px] border-black w-[350px] h-[40px] "  type="password" placeholder="Confirm password">
+            <i id="confirmIcon" class="fa-solid fa-eye absolute right-12 bottom-[190px]"></i>
+            <p id="confirmPassError"></p>
+            <br>
+            <button id="save" class="bg-blue-400 mt-6 w-[350px] h-[50px]  text-white text-3xl ">Save</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
